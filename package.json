@@ -1,0 +1,28 @@
+{
+  "name": "bs-recipes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "crossbow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrowserSync/recipes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrowserSync/recipes/issues"
+  },
+  "homepage": "https://github.com/BrowserSync/recipes",
+  "devDependencies": {
+    "crossbow": "git://github.com/shakyshane/crossbow.js"
+  },
+  "crossbow": {
+    "name": "shane"
+  },
+  "dependencies": {
+    "node-dir": "^0.1.6"
+  }
+}
