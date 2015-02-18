@@ -1,5 +1,6 @@
 var fs       = require('fs');
 var crossbow = require('crossbow');
+var path     = require('path');
 
 var dirs = fs.readdirSync("./recipes")
     .map(function (item) {
@@ -41,4 +42,32 @@ site.compile({
         }
         fs.writeFileSync("readme.md", out.get("compiled"));
     }
+});
+
+dirs.forEach(function (item) {
+
+    var key    = path.join("recipes", item.dir, "desc.md");
+    var output = path.join("recipes", item.dir, "readme.md");
+
+    var site = crossbow.builder({config: {cwd: "recipes/" + item.dir, markdown: false}});
+
+    var page = site.add({
+        key: key,
+        content: fs.readFileSync(path.join("_src", "template.md"), "utf8")
+    });
+
+    site.freeze();
+
+    site.compile({
+        item: page,
+        data: {
+            example: item
+        },
+        cb: function (err, out) {
+            if (err) {
+                return site.logger.error(site.getErrorString(err));
+            }
+            fs.writeFileSync(output, out.get("compiled"));
+        }
+    });
 });
