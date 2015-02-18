@@ -8,5 +8,6 @@ var browserSync = require('browser-sync');
  */
 browserSync({
     server: "app",
-    files: ["app/*.html", "app/css/*.css"]
+    files: ["app/*.html", "app/css/*.css"],
+    middleware: require("connect-logger")()
 });
