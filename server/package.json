@@ -1,0 +1,13 @@
+{
+  "name": "bs-recipes-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bs.js",
+  "scripts": {
+    "start": "node bs.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.1.6"
+  }
+}
