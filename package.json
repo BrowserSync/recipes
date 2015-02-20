@@ -18,12 +18,10 @@
   },
   "homepage": "https://github.com/BrowserSync/recipes",
   "devDependencies": {
+    "node-dir": "^0.1.6",
     "crossbow": "git://github.com/shakyshane/crossbow.js"
   },
   "crossbow": {
     "name": "shane"
-  },
-  "dependencies": {
-    "node-dir": "^0.1.6"
   }
 }
