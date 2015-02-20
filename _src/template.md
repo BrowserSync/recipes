@@ -1,28 +1,28 @@
 {{#data src="package.json" as="pkg"}}
-##BrowserSync - {{pkg.description}}
+#BrowserSync - {{pkg.description}}
 
-### Installation/Usage:
+## Installation/Usage:
 
 To try this example, follow these 4 simple steps. 
 
-**Step 1** Clone this entire repo
+**Step 1**: Clone this entire repo
 ```bash
-git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
 ```
 
-**Step 2** Move into the directory containing this example
+**Step 2**: Move into the directory containing this example
 ```bash
-cd bs-recipes/{{page.path.dir}}
+$ cd bs-recipes/{{page.path.dir}}
 ```
 
-**Step 3** Install dependencies
+**Step 3**: Install dependencies
 ```bash
-npm install
+$ npm install
 ```
 
-**Step 4** Run the example
+**Step 4**: Run the example
 ```bash
-npm start
+$ npm start
 ```
 
 ### Additional Info:
