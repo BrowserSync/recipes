@@ -9,8 +9,11 @@ This repo contains many examples, but to try out *just* this one, follow these i
 - `npm install`
 - `npm start`
 
+### Additional Info:
 
-Preview of **Gruntfile.js**
+
+
+### Preview of **Gruntfile.js**:
 ```js
 // This shows a full config file!
 module.exports = function (grunt) {

@@ -8,9 +8,12 @@ This repo contains many examples, but to try out *just* this one, follow these i
 - Move into the directory containing this example `cd bs-recipes/recipes/middleware.css.injection`
 - `npm install`
 - `npm start`
+
+### Additional Info:
+
 - Perform changes to `app/css/main.less` to see live css injection
 
-Preview of **app.js**
+### Preview of **app.js**:
 ```js
 /**
  * Require BrowserSync

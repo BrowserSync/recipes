@@ -8,9 +8,14 @@ This repo contains many examples, but to try out *just* this one, follow these i
 - Move into the directory containing this example `cd bs-recipes/recipes/server`
 - `npm install`
 - `npm start`
-- Perform changes to either `index.html` or `css/main.css`
 
-Preview of **app.js**
+### Additional Info:
+
+
+
+To see the live-updating and CSS injecting, simply perform changes to either `index.html` or `css/main.css`
+
+### Preview of **app.js**:
 ```js
 /**
  * Require BrowserSync

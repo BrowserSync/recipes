@@ -9,10 +9,13 @@ This repo contains many examples, but to try out *just* this one, follow these i
 - Move into the directory containing this example `cd bs-recipes/{{page.path.dir}}`
 - `npm install`
 - `npm start`
+
+### Additional Info:
+
 {{inc src="desc.md"}}
 
 {{#if pkg.main}}
-Preview of **{{pkg.main}}**
+### Preview of **{{pkg.main}}**:
 ```js
 {{inc src=pkg.main}}
 ```

@@ -9,6 +9,9 @@ This repo contains many examples, but to try out *just* this one, follow these i
 - `npm install`
 - `npm start`
 
+### Additional Info:
+
+
 
 This example shows how you can chain potentially slow-running tasks, but still achieve CSS
 Injection. The trick, as seen below, is to NOT watch the CSS files at all, but instead trigger
@@ -30,7 +33,7 @@ watch: {
 and everything will just work perfectly!
 
 
-Preview of **Gruntfile.js**
+### Preview of **Gruntfile.js**:
 ```js
 var browserSync = require('browser-sync');
 
