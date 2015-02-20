@@ -1,4 +1,4 @@
-##Browser Sync - Server Example
+##BrowserSync - Server example
 
 ### Installation/Usage:
 

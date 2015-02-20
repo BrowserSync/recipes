@@ -10,6 +10,7 @@ var dirs = fs.readdirSync("./recipes")
         };
     })
     .map(function (item) {
+        item.pkg   = require("./recipes/"+item.dir+"/package.json");
         item.title = item.name.map(function (item) {
             return item.charAt(0).toUpperCase() + item.slice(1);
         }).join(" ");

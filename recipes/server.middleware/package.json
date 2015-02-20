@@ -1,7 +1,7 @@
 {
   "name": "bs-recipes-server",
   "version": "1.0.0",
-  "description": "BrowserSync Server example",
+  "description": "Server + Logging Middleware Example",
   "main": "bs.js",
   "scripts": {
     "start": "node bs.js"

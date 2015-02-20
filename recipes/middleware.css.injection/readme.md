@@ -1,4 +1,4 @@
-##Browser Sync - Middleware Css Injection Example
+##BrowserSync - Middleware + CSS example
 
 ### Installation/Usage:
 

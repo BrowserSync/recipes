@@ -1,4 +1,5 @@
 .idea
 node_modules
+npm-debug.log
 .sass-cache
 *.css.map

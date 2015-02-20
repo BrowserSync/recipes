@@ -1,4 +1,4 @@
-##Browser Sync - Server Middleware Example
+##BrowserSync - Server + Logging Middleware Example
 
 ### Installation/Usage:
 
