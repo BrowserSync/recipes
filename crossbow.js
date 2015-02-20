@@ -1,6 +1,7 @@
 var fs       = require('fs');
 var crossbow = require('crossbow');
 var path     = require('path');
+var prefix   = "https://github.com/BrowserSync/recipes/tree/master/recipes";
 
 var dirs = fs.readdirSync("./recipes")
     .map(function (item) {
@@ -11,11 +12,14 @@ var dirs = fs.readdirSync("./recipes")
     })
     .map(function (item) {
         item.pkg   = require("./recipes/"+item.dir+"/package.json");
+        item.link  = [prefix, item.dir].join("/");
         item.title = item.name.map(function (item) {
             return item.charAt(0).toUpperCase() + item.slice(1);
         }).join(" ");
         return item;
     });
+
+fs.writeFileSync("./manifest.json", JSON.stringify(dirs, null, 4));
 
 var site = crossbow.builder({
     config: {

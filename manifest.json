@@ -1,0 +1,96 @@
+[
+    {
+        "dir": "grunt.sass",
+        "name": [
+            "grunt",
+            "sass"
+        ],
+        "pkg": {
+            "name": "grunt.sass",
+            "version": "1.0.0",
+            "description": "Grunt & SASS",
+            "main": "Gruntfile.js",
+            "scripts": {
+                "start": "grunt"
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "grunt": "^0.4.5",
+                "grunt-browser-sync": "^2.0.0",
+                "grunt-contrib-sass": "^0.9.2",
+                "grunt-contrib-watch": "^0.6.1"
+            }
+        },
+        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/grunt.sass",
+        "title": "Grunt Sass"
+    },
+    {
+        "dir": "middleware.css.injection",
+        "name": [
+            "middleware",
+            "css",
+            "injection"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server",
+            "version": "1.0.0",
+            "description": "Middleware + CSS example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6",
+                "less": "^2.4.0"
+            }
+        },
+        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/middleware.css.injection",
+        "title": "Middleware Css Injection"
+    },
+    {
+        "dir": "server",
+        "name": [
+            "server"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server",
+            "version": "1.0.0",
+            "description": "Server example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6"
+            }
+        },
+        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/server",
+        "title": "Server"
+    },
+    {
+        "dir": "server.middleware",
+        "name": [
+            "server",
+            "middleware"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server",
+            "version": "1.0.0",
+            "description": "Server + Logging Middleware Example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6",
+                "connect-logger": "0.0.1"
+            }
+        },
+        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/server.middleware",
+        "title": "Server Middleware"
+    }
+]
