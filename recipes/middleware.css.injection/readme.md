@@ -13,7 +13,7 @@ This repo contains many examples, but to try out *just* this one, follow these i
 
 - Perform changes to `app/css/main.less` to see live css injection
 
-### Preview of **app.js**:
+### Preview of `app.js`:
 ```js
 /**
  * Require BrowserSync

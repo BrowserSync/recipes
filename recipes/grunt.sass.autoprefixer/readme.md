@@ -33,7 +33,7 @@ watch: {
 and everything will just work perfectly!
 
 
-### Preview of **Gruntfile.js**:
+### Preview of `Gruntfile.js`:
 ```js
 var browserSync = require('browser-sync');
 

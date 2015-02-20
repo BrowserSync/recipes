@@ -15,7 +15,7 @@ This repo contains many examples, but to try out *just* this one, follow these i
 
 To see the live-updating and CSS injecting, simply perform changes to either `index.html` or `css/main.css`
 
-### Preview of **app.js**:
+### Preview of `app.js`:
 ```js
 /**
  * Require BrowserSync

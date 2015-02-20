@@ -13,6 +13,10 @@ This repo contains many examples, but to try out *just* this one, follow these i
 
 
 
+This example highlights both the stream support for injecting CSS, aswell
+as the support for calling `reload` directly following html changes. 
+
+
 ### Preview of `gulpfile.js`:
 ```js
 var gulp        = require('gulp');
@@ -27,10 +31,11 @@ var src = {
 };
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function(done) {
+gulp.task('serve', ['sass'], function() {
+
     browserSync({
         server: "./app"
-    }, done);
+    });
 
     gulp.watch(src.scss, ['sass']);
     gulp.watch(src.html).on('change', reload);
