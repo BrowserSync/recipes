@@ -2,7 +2,10 @@
 
 ### Installation/Usage:
 
-- Clone this repo
+This repo contains many examples, but to try out *just* this one, follow these instructions: 
+
+- Clone the entire repo `git clone https://github.com/BrowserSync/recipes.git bs-recipes`
+- Move into the directory containing this example `cd bs-recipes/recipes/server.middleware`
 - `npm install`
 - `npm start`
 
