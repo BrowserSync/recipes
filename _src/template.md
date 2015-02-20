@@ -3,12 +3,27 @@
 
 ### Installation/Usage:
 
-This repo contains many examples, but to try out *just* this one, follow these instructions: 
+To try this example, follow these 4 simple steps. 
 
-- Clone the entire repo `git clone https://github.com/BrowserSync/recipes.git bs-recipes`
-- Move into the directory containing this example `cd bs-recipes/{{page.path.dir}}`
-- `npm install`
-- `npm start`
+**Step 1** Clone this entire repo
+```bash
+git clone https://github.com/BrowserSync/recipes.git bs-recipes
+```
+
+**Step 2** Move into the directory containing this example
+```bash
+cd bs-recipes/{{page.path.dir}}
+```
+
+**Step 3** Install dependencies
+```bash
+npm install
+```
+
+**Step 4** Run the example
+```bash
+npm start
+```
 
 ### Additional Info:
 

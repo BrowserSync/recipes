@@ -1,4 +1,4 @@
-##BrowserSync - Gulp &amp; SASS
+##BrowserSync - Gulp &amp; Ruby SASS
 
 ### Installation/Usage:
 
@@ -11,7 +11,7 @@ git clone https://github.com/BrowserSync/recipes.git bs-recipes
 
 **Step 2** Move into the directory containing this example
 ```bash
-cd bs-recipes/recipes/gulp.sass
+cd bs-recipes/recipes/gulp.ruby.sass
 ```
 
 **Step 3** Install dependencies
@@ -29,14 +29,16 @@ npm start
 
 
 This example highlights both the stream support for injecting CSS, aswell
-as the support for calling `reload` directly following html changes.
+as the support for calling `reload` directly following html changes. 
 
+We also need to filter out any source maps created by ruby-sass.
 
 ### Preview of `gulpfile.js`:
 ```js
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
-var sass        = require('gulp-sass');
+var filter      = require('gulp-filter');
+var sass        = require('gulp-ruby-sass');
 var reload      = browserSync.reload;
 
 var src = {
@@ -58,13 +60,14 @@ gulp.task('serve', ['sass'], function() {
 
 // Compile sass into CSS
 gulp.task('sass', function() {
-    return gulp.src(src.scss)
-        .pipe(sass())
+    return sass('app/scss')
+        .on('error', function (err) {
+            console.error('Error!', err.message);
+        })
         .pipe(gulp.dest(src.css))
         .pipe(reload({stream: true}));
 });
 
 gulp.task('default', ['serve']);
-
 ```
 
