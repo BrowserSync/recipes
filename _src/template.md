@@ -12,6 +12,7 @@ This repo contains many examples, but to try out *just* this one, follow these i
 {{inc src="desc.md"}}
 
 {{#if pkg.main}}
+Preview of **{{pkg.main}}**
 ```js
 {{inc src=pkg.main}}
 ```

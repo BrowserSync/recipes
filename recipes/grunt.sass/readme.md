@@ -10,6 +10,7 @@ This repo contains many examples, but to try out *just* this one, follow these i
 - `npm start`
 
 
+Preview of **Gruntfile.js**
 ```js
 // This shows a full config file!
 module.exports = function (grunt) {

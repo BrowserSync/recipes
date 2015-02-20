@@ -10,6 +10,7 @@ This repo contains many examples, but to try out *just* this one, follow these i
 - `npm start`
 - Perform changes to either `index.html` or `css/main.css`
 
+Preview of **app.js**
 ```js
 /**
  * Require BrowserSync
