@@ -54,7 +54,7 @@ dirs.forEach(function (item) {
     var key    = path.join("recipes", item.dir, "desc.md");
     var output = path.join("recipes", item.dir, "readme.md");
 
-    var site = crossbow.builder({config: {cwd: "recipes/" + item.dir, markdown: false}});
+    var site = crossbow.builder({config: {base: "recipes/" + item.dir, markdown: false}});
 
     var page = site.add({
         key: key,
