@@ -80,8 +80,8 @@ gulp.task('serve', ['sass'], function() {
  */
 gulp.task('sass', function() {
     return sassStream()
-        .pipe(filter("**/*.css"))
         .pipe(gulp.dest(src.css))
+        .pipe(filter("**/*.css"))
         .pipe(reload({stream: true}));
 });
 
