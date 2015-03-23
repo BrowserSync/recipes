@@ -29,10 +29,11 @@ $ npm start
 
 
 This example shows how you can chain potentially slow-running tasks, but still achieve CSS
-Injection. The trick, as seen below, is to NOT watch the CSS files at all, but instead trigger
-the `browserSync.reload` method at exactly the correct time.
+Injection. The trick, as seen below, is to use the `bsReload` task that now comes 
+bundled with `grunt-browser-sync` since `2.1.0`
 
-That's why we configure the watch task like this:
+Don't forget the `spawn: false` option for the watch task - it's a requirement
+that allows BrowserSync to work correctly
 
 ```js
 watch: {
@@ -40,18 +41,13 @@ watch: {
         spawn: false // Important, don't remove this!
     },
     files: 'app/**/*.scss',
-    tasks: ['sass', 'autoprefixer', 'bs-inject']
+    tasks: ['sass', 'autoprefixer', 'bsReload:css']
 },
 ```
-
-... because we are not watching the out CSS files, we can chain as many tasks together as we need, 
-and everything will just work perfectly!
 
 
 ### Preview of `Gruntfile.js`:
 ```js
-var browserSync = require('browser-sync');
-
 module.exports = function (grunt) {
     grunt.initConfig({
         dirs: {
@@ -62,8 +58,14 @@ module.exports = function (grunt) {
             options: {
                 spawn: false
             },
-            files: '<%= dirs.scss %>/**/*.scss',
-            tasks: ['sass', 'autoprefixer', 'bs-inject']
+            sass: {
+                files: '<%= dirs.scss %>/**/*.scss',
+                tasks: ['sass', 'autoprefixer', 'bsReload:css']
+            },
+            html: {
+                files: 'app/*.html',
+                tasks: ['bsReload:all']
+            }
         },
         sass: {
             dev: {
@@ -80,26 +82,33 @@ module.exports = function (grunt) {
                 src: '<%= dirs.css %>/main.css',
                 dest: '<%= dirs.css %>/main.css'
             }
+        },
+        browserSync: {
+            dev: {
+                options: {
+                    server: "./app",
+                    background: true
+                }
+            }
+        },
+        bsReload: {
+            css: {
+                reload: "main.css"
+            },
+            all: {
+                reload: true
+            }
         }
-    });
-
-    grunt.registerTask('bs-init', function () {
-        browserSync({
-            server: "./app"
-        })
-    });
-
-    grunt.registerTask('bs-inject', function () {
-        browserSync.reload('main.css');
     });
 
     // load npm tasks
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // define default task
-    grunt.registerTask('default', ['bs-init', 'watch']);
+    grunt.registerTask('default', ['browserSync', 'watch']);
 };
 ```
 
