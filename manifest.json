@@ -186,6 +186,30 @@
         "title": "Server"
     },
     {
+        "dir": "server.gzipped.assets",
+        "name": [
+            "server",
+            "gzipped",
+            "assets"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server-with-gzipped-assets",
+            "version": "1.0.0",
+            "description": "Server with pre-gzipped assets example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.4.0",
+                "connect-gzip-static": "^1.0.0"
+            }
+        },
+        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/server.gzipped.assets",
+        "title": "Server Gzipped Assets"
+    },
+    {
         "dir": "server.middleware",
         "name": [
             "server",

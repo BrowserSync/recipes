@@ -12,6 +12,7 @@ Here's what we have currently...
 - [Gulp &amp; SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.sass)
 - [Middleware + CSS example](https://github.com/BrowserSync/recipes/tree/master/recipes/middleware.css.injection)
 - [Server example](https://github.com/BrowserSync/recipes/tree/master/recipes/server)
+- [Server with pre-gzipped assets example](https://github.com/BrowserSync/recipes/tree/master/recipes/server.gzipped.assets)
 - [Server + Logging Middleware Example](https://github.com/BrowserSync/recipes/tree/master/recipes/server.middleware)
 
 ... each one is a full, working example - just have a look at the `readme.md` in each one for installation
