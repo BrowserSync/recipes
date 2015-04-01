@@ -10,6 +10,7 @@ Here's what we have currently...
 - [Browserify, Babel (6to5) &amp; React example](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.browserify)
 - [Gulp &amp; Ruby SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.ruby.sass)
 - [Gulp &amp; SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.sass)
+- [Gulp &amp; Swig Templates](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.swig)
 - [Gulp, SASS + Slow running tasks](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.task.sequence)
 - [Middleware + CSS example](https://github.com/BrowserSync/recipes/tree/master/recipes/middleware.css.injection)
 - [Server example](https://github.com/BrowserSync/recipes/tree/master/recipes/server)
