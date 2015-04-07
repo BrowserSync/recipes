@@ -8,6 +8,7 @@ Here's what we have currently...
 - [Grunt &amp; SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/grunt.sass)
 - [Grunt, SASS &amp; Autoprefixer](https://github.com/BrowserSync/recipes/tree/master/recipes/grunt.sass.autoprefixer)
 - [Browserify, Babel (6to5) &amp; React example](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.browserify)
+- [Gulp, SASS + Jade Templates](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.jade)
 - [Gulp &amp; Ruby SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.ruby.sass)
 - [Gulp &amp; SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.sass)
 - [Gulp &amp; Swig Templates](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.swig)
