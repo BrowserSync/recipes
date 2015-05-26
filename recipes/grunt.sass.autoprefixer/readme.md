@@ -1,4 +1,4 @@
-#BrowserSync - Grunt, SASS &amp; Autoprefixer
+#Browsersync - Grunt, SASS &amp; Autoprefixer
 
 ## Installation/Usage:
 
@@ -6,7 +6,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example
@@ -33,7 +33,7 @@ Injection. The trick, as seen below, is to use the `bsReload` task that now come
 bundled with `grunt-browser-sync` since `2.1.0`
 
 Don't forget the `spawn: false` option for the watch task - it's a requirement
-that allows BrowserSync to work correctly
+that allows Browsersync to work correctly
 
 ```js
 watch: {

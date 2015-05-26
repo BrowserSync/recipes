@@ -1,7 +1,7 @@
 var fs       = require('fs');
 var crossbow = require('crossbow');
 var path     = require('path');
-var prefix   = "https://github.com/BrowserSync/recipes/tree/master/recipes";
+var prefix   = "https://github.com/Browsersync/recipes/tree/master/recipes";
 
 var dirs = fs.readdirSync("./recipes")
     .map(function (item) {

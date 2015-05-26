@@ -1,4 +1,4 @@
-#BrowserSync - Gulp &amp; Swig Templates
+#Browsersync - Gulp &amp; Swig Templates
 
 ## Installation/Usage:
 
@@ -6,7 +6,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example
@@ -27,7 +27,7 @@ $ npm start
 ### Additional Info:
 
 This example will build HTML files from `./app` with `gulp-swig`
-and place them into the `dist` folder. BrowserSync then serves from that
+and place them into the `dist` folder. Browsersync then serves from that
 folder and reloads after the templates are compiled.
 
 ### Preview of `gulpfile.js`:
