@@ -1,5 +1,5 @@
 {{#data src="package.json" as="pkg"}}
-#BrowserSync - {{pkg.description}}
+#Browsersync - {{pkg.description}}
 
 ## Installation/Usage:
 
@@ -7,7 +7,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example

@@ -1,4 +1,4 @@
-#BrowserSync - HTML/CSS injection example
+#Browsersync - HTML/CSS injection example
 
 ## Installation/Usage:
 
@@ -6,7 +6,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example
@@ -33,12 +33,12 @@ To see the live HTML injecting, along with CSS injection, simply perform changes
 ### Preview of `app.js`:
 ```js
 /**
- * Require BrowserSync
+ * Require Browsersync
  */
 var bs = require('browser-sync').create();
 
 /**
- * Run BrowserSync with server config
+ * Run Browsersync with server config
  */
 bs.init({
     server: "app",

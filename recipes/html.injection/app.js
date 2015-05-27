@@ -1,10 +1,10 @@
 /**
- * Require BrowserSync
+ * Require Browsersync
  */
 var bs = require('browser-sync').create();
 
 /**
- * Run BrowserSync with server config
+ * Run Browsersync with server config
  */
 bs.init({
     server: "app",

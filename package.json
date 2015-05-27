@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BrowserSync/recipes.git"
+    "url": "https://github.com/Browsersync/recipes.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BrowserSync/recipes/issues"
+    "url": "https://github.com/Browsersync/recipes/issues"
   },
-  "homepage": "https://github.com/BrowserSync/recipes",
+  "homepage": "https://github.com/Browsersync/recipes",
   "devDependencies": {
     "node-dir": "^0.1.6",
     "crossbow": "git://github.com/shakyshane/crossbow.js"

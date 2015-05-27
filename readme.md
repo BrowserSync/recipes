@@ -1,23 +1,23 @@
-## BrowserSync recipes.
+## Browsersync recipes.
 
-There are endless amounts of possible integrations and workflow scenarios when using BrowserSync, so this project is an 
+There are endless amounts of possible integrations and workflow scenarios when using Browsersync, so this project is an 
 attempt to highlight as many of them as we can, whilst providing full, working examples.
 
 Here's what we have currently...
 
-- [Grunt &amp; SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/grunt.sass)
-- [Grunt, SASS &amp; Autoprefixer](https://github.com/BrowserSync/recipes/tree/master/recipes/grunt.sass.autoprefixer)
-- [Browserify, Babel (6to5) &amp; React example](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.browserify)
-- [Gulp, SASS + Jade Templates](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.jade)
-- [Gulp &amp; Ruby SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.ruby.sass)
-- [Gulp &amp; SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.sass)
-- [Gulp &amp; Swig Templates](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.swig)
-- [Gulp, SASS + Slow running tasks](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.task.sequence)
-- [HTML/CSS injection example](https://github.com/BrowserSync/recipes/tree/master/recipes/html.injection)
-- [Middleware + CSS example](https://github.com/BrowserSync/recipes/tree/master/recipes/middleware.css.injection)
-- [Server example](https://github.com/BrowserSync/recipes/tree/master/recipes/server)
-- [Server with pre-gzipped assets example](https://github.com/BrowserSync/recipes/tree/master/recipes/server.gzipped.assets)
-- [Server + Logging Middleware Example](https://github.com/BrowserSync/recipes/tree/master/recipes/server.middleware)
+- [Grunt &amp; SASS](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass)
+- [Grunt, SASS &amp; Autoprefixer](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass.autoprefixer)
+- [Browserify, Babel (6to5) &amp; React example](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.browserify)
+- [Gulp, SASS + Jade Templates](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.jade)
+- [Gulp &amp; Ruby SASS](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.ruby.sass)
+- [Gulp &amp; SASS](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.sass)
+- [Gulp &amp; Swig Templates](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.swig)
+- [Gulp, SASS + Slow running tasks](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.task.sequence)
+- [HTML/CSS injection example](https://github.com/Browsersync/recipes/tree/master/recipes/html.injection)
+- [Middleware + CSS example](https://github.com/Browsersync/recipes/tree/master/recipes/middleware.css.injection)
+- [Server example](https://github.com/Browsersync/recipes/tree/master/recipes/server)
+- [Server with pre-gzipped assets example](https://github.com/Browsersync/recipes/tree/master/recipes/server.gzipped.assets)
+- [Server + Logging Middleware Example](https://github.com/Browsersync/recipes/tree/master/recipes/server.middleware)
 
 ... each one is a full, working example - just have a look at the `readme.md` in each one for installation
 instructions.
@@ -27,11 +27,11 @@ instructions.
 
 Spotted an error? Couldn't get one of the examples running? Have your own sweet setup that you want to show off to the world?
 We'd love to receive your feedback and contributions - so please get in touch! We aim to make this project the canonical source 
-of example projects & code snippets related to running BrowserSync.
+of example projects & code snippets related to running Browsersync.
 
 ### How to contribute an example
 
-First thing you should do, is take a look at our [simplest example here](https://github.com/BrowserSync/recipes/tree/master/recipes/server) - 
+First thing you should do, is take a look at our [simplest example here](https://github.com/Browsersync/recipes/tree/master/recipes/server) - 
 this will give you a great head-start on setting up your code.
 
 Then, `fork` this repo and `clone` your fork down to your local machine. Now create a new folder inside `recipes`

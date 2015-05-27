@@ -1,5 +1,5 @@
 /**
- * Require BrowserSync
+ * Require Browsersync
  */
 var browserSync = require("browser-sync");
 
@@ -26,7 +26,7 @@ function less(src) {
 }
 
 /**
- * Run BrowserSync with less middleware
+ * Run Browsersync with less middleware
  */
 browserSync({
     files: "app/css/*.less",

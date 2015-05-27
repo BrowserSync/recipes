@@ -1,6 +1,6 @@
-## BrowserSync recipes.
+## Browsersync recipes.
 
-There are endless amounts of possible integrations and workflow scenarios when using BrowserSync, so this project is an 
+There are endless amounts of possible integrations and workflow scenarios when using Browsersync, so this project is an 
 attempt to highlight as many of them as we can, whilst providing full, working examples.
 
 Here's what we have currently...
@@ -17,11 +17,11 @@ instructions.
 
 Spotted an error? Couldn't get one of the examples running? Have your own sweet setup that you want to show off to the world?
 We'd love to receive your feedback and contributions - so please get in touch! We aim to make this project the canonical source 
-of example projects & code snippets related to running BrowserSync.
+of example projects & code snippets related to running Browsersync.
 
 ### How to contribute an example
 
-First thing you should do, is take a look at our [simplest example here](https://github.com/BrowserSync/recipes/tree/master/recipes/server) - 
+First thing you should do, is take a look at our [simplest example here](https://github.com/Browsersync/recipes/tree/master/recipes/server) - 
 this will give you a great head-start on setting up your code.
 
 Then, `fork` this repo and `clone` your fork down to your local machine. Now create a new folder inside `recipes`

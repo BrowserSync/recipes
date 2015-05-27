@@ -26,7 +26,7 @@ function sassStream () {
 }
 
 /**
- * Start the BrowserSync Static Server + Watch files
+ * Start the Browsersync Static Server + Watch files
  */
 gulp.task('serve', ['sass'], function() {
 

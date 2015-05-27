@@ -1,4 +1,4 @@
-#BrowserSync - Server + Logging Middleware Example
+#Browsersync - Server + Logging Middleware Example
 
 ## Installation/Usage:
 
@@ -6,7 +6,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example
@@ -35,12 +35,12 @@ This example adds the [connect-logger](https://www.npmjs.com/package/connect-log
 ### Preview of `app.js`:
 ```js
 /**
- * Require BrowserSync
+ * Require Browsersync
  */
 var browserSync = require('browser-sync');
 
 /**
- * Run BrowserSync with server config
+ * Run Browsersync with server config
  */
 browserSync({
     server: "app",

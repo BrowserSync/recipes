@@ -1,4 +1,4 @@
-#BrowserSync - Middleware + CSS example
+#Browsersync - Middleware + CSS example
 
 ## Installation/Usage:
 
@@ -6,7 +6,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example
@@ -31,7 +31,7 @@ $ npm start
 ### Preview of `app.js`:
 ```js
 /**
- * Require BrowserSync
+ * Require Browsersync
  */
 var browserSync = require("browser-sync");
 
@@ -58,7 +58,7 @@ function less(src) {
 }
 
 /**
- * Run BrowserSync with less middleware
+ * Run Browsersync with less middleware
  */
 browserSync({
     files: "app/css/*.less",

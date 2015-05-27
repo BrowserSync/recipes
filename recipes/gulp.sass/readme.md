@@ -1,4 +1,4 @@
-#BrowserSync - Gulp &amp; SASS
+#Browsersync - Gulp &amp; SASS
 
 ## Installation/Usage:
 
@@ -6,7 +6,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example
@@ -28,7 +28,7 @@ $ npm start
 
 
 
-This example highlights both the stream support for injecting CSS, aswell
+This example highlights both the stream support for injecting CSS, as well
 as the support for calling `reload` directly following html changes.
 
 

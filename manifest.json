@@ -22,7 +22,7 @@
                 "grunt-contrib-watch": "^0.6.1"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/grunt.sass",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass",
         "title": "Grunt Sass"
     },
     {
@@ -50,7 +50,7 @@
                 "grunt-contrib-watch": "^0.6.1"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/grunt.sass.autoprefixer",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass.autoprefixer",
         "title": "Grunt Sass Autoprefixer"
     },
     {
@@ -83,7 +83,7 @@
                 "watchify": "^2.3.0"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.browserify",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.browserify",
         "title": "Gulp Browserify"
     },
     {
@@ -109,7 +109,7 @@
                 "gulp-sass": "^1.3.3"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.jade",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.jade",
         "title": "Gulp Jade"
     },
     {
@@ -138,7 +138,7 @@
                 "gulp-sourcemaps": "^1.5.1"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.ruby.sass",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.ruby.sass",
         "title": "Gulp Ruby Sass"
     },
     {
@@ -163,7 +163,7 @@
                 "gulp-sass": "^1.3.3"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.sass",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.sass",
         "title": "Gulp Sass"
     },
     {
@@ -189,7 +189,7 @@
                 "gulp-swig": "^0.7.4"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.swig",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.swig",
         "title": "Gulp Swig"
     },
     {
@@ -216,7 +216,7 @@
                 "through2": "^0.6.3"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.task.sequence",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.task.sequence",
         "title": "Gulp Task Sequence"
     },
     {
@@ -238,7 +238,7 @@
                 "browser-sync": "^2.1.6"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/html.injection",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/html.injection",
         "title": "Html Injection"
     },
     {
@@ -262,7 +262,7 @@
                 "less": "^2.4.0"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/middleware.css.injection",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/middleware.css.injection",
         "title": "Middleware Css Injection"
     },
     {
@@ -283,7 +283,7 @@
                 "browser-sync": "^2.1.6"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/server",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server",
         "title": "Server"
     },
     {
@@ -307,7 +307,7 @@
                 "connect-gzip-static": "^1.0.0"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/server.gzipped.assets",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server.gzipped.assets",
         "title": "Server Gzipped Assets"
     },
     {
@@ -330,7 +330,7 @@
                 "connect-logger": "0.0.1"
             }
         },
-        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/server.middleware",
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server.middleware",
         "title": "Server Middleware"
     }
 ]

@@ -1,4 +1,4 @@
-#BrowserSync - Server with pre-gzipped assets example
+#Browsersync - Server with pre-gzipped assets example
 
 ## Installation/Usage:
 
@@ -6,7 +6,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example
@@ -34,12 +34,12 @@ to serve already-gzipped assets.
 ### Preview of `app.js`:
 ```js
 /**
- * Require BrowserSync
+ * Require Browsersync
  */
 var browserSync = require('browser-sync');
 
 /**
- * Run BrowserSync with server config
+ * Run Browsersync with server config
  */
 browserSync({
     server: "app",

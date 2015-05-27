@@ -1,4 +1,4 @@
-#BrowserSync - Gulp &amp; Ruby SASS
+#Browsersync - Gulp &amp; Ruby SASS
 
 ## Installation/Usage:
 
@@ -6,7 +6,7 @@ To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/BrowserSync/recipes.git bs-recipes
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
 ```
 
 **Step 2**: Move into the directory containing this example
@@ -63,7 +63,7 @@ function sassStream () {
 }
 
 /**
- * Start the BrowserSync Static Server + Watch files
+ * Start the Browsersync Static Server + Watch files
  */
 gulp.task('serve', ['sass'], function() {
 
