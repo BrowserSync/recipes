@@ -220,6 +220,28 @@
         "title": "Gulp Task Sequence"
     },
     {
+        "dir": "html.injection",
+        "name": [
+            "html",
+            "injection"
+        ],
+        "pkg": {
+            "name": "bs-recipes-html-injection",
+            "version": "1.0.0",
+            "description": "HTML/CSS injection example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6"
+            }
+        },
+        "link": "https://github.com/BrowserSync/recipes/tree/master/recipes/html.injection",
+        "title": "Html Injection"
+    },
+    {
         "dir": "middleware.css.injection",
         "name": [
             "middleware",

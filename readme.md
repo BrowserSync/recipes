@@ -13,6 +13,7 @@ Here's what we have currently...
 - [Gulp &amp; SASS](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.sass)
 - [Gulp &amp; Swig Templates](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.swig)
 - [Gulp, SASS + Slow running tasks](https://github.com/BrowserSync/recipes/tree/master/recipes/gulp.task.sequence)
+- [HTML/CSS injection example](https://github.com/BrowserSync/recipes/tree/master/recipes/html.injection)
 - [Middleware + CSS example](https://github.com/BrowserSync/recipes/tree/master/recipes/middleware.css.injection)
 - [Server example](https://github.com/BrowserSync/recipes/tree/master/recipes/server)
 - [Server with pre-gzipped assets example](https://github.com/BrowserSync/recipes/tree/master/recipes/server.gzipped.assets)
