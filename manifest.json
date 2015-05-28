@@ -339,6 +339,28 @@
         "title": "Server Gzipped Assets"
     },
     {
+        "dir": "server.includes",
+        "name": [
+            "server",
+            "includes"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server-includes",
+            "version": "1.0.0",
+            "description": "Server includes example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server.includes",
+        "title": "Server Includes"
+    },
+    {
         "dir": "server.middleware",
         "name": [
             "server",

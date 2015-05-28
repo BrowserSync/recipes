@@ -18,6 +18,7 @@ Here's what we have currently...
 - [Middleware + CSS example](https://github.com/Browsersync/recipes/tree/master/recipes/middleware.css.injection)
 - [Server example](https://github.com/Browsersync/recipes/tree/master/recipes/server)
 - [Server with pre-gzipped assets example](https://github.com/Browsersync/recipes/tree/master/recipes/server.gzipped.assets)
+- [Server includes example](https://github.com/Browsersync/recipes/tree/master/recipes/server.includes)
 - [Server + Logging Middleware Example](https://github.com/Browsersync/recipes/tree/master/recipes/server.middleware)
 
 ... each one is a full, working example - just have a look at the `readme.md` in each one for installation
