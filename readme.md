@@ -5,6 +5,7 @@ attempt to highlight as many of them as we can, whilst providing full, working e
 
 Here's what we have currently...
 
+- [Grunt, SASS, HTML/CSS injection example](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.html.injection)
 - [Grunt &amp; SASS](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass)
 - [Grunt, SASS &amp; Autoprefixer](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass.autoprefixer)
 - [Browserify, Babel (6to5) &amp; React example](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.browserify)
