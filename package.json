@@ -1,25 +1,20 @@
 {
   "name": "bs-recipes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fully working project examples showing how to use BrowserSync in various ways",
+  "private": true,
+  "repository": "BrowserSync/recipes",
+  "author": "Shane Osbourne",
   "main": "crossbow.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node crossbow.js"
+    "build": "node crossbow.js",
+    "test": "npm run-script build"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Browsersync/recipes.git"
-  },
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Browsersync/recipes/issues"
-  },
-  "homepage": "https://github.com/Browsersync/recipes",
+  "homepage": "http://www.browsersync.io/docs/recipes/",
   "devDependencies": {
     "node-dir": "^0.1.6",
-    "crossbow": "git://github.com/shakyshane/crossbow.js"
+    "crossbow": "shakyshane/crossbow"
   },
   "crossbow": {
     "name": "shane"
