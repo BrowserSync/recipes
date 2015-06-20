@@ -1,11 +1,11 @@
-var gulp         = require('gulp');
-var gutil        = require('gulp-util');
-var source       = require('vinyl-source-stream');
-var sixtofiveify = require('6to5ify');
-var reactify     = require('reactify');
-var watchify     = require('watchify');
-var browserify   = require('browserify');
-var browserSync  = require('browser-sync');
+var gulp        = require('gulp');
+var gutil       = require('gulp-util');
+var source      = require('vinyl-source-stream');
+var babelify    = require('babelify');
+var reactify    = require('reactify');
+var watchify    = require('watchify');
+var browserify  = require('browserify');
+var browserSync = require('browser-sync');
 
 // Input file.
 var bundler     = watchify(browserify('./app/js/app.jsx', watchify.args));
@@ -13,8 +13,8 @@ var bundler     = watchify(browserify('./app/js/app.jsx', watchify.args));
 // React JSX transform
 bundler.transform(reactify);
 
-// Babel, 6to5ify transform
-bundler.transform(sixtofiveify);
+// Babel transform
+bundler.transform(babelify);
 
 // On updates recompile
 bundler.on('update', bundle);
