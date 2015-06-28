@@ -13,10 +13,7 @@
   "license": "ISC",
   "homepage": "http://www.browsersync.io/docs/recipes/",
   "devDependencies": {
-    "node-dir": "^0.1.6",
-    "crossbow": "shakyshane/crossbow"
-  },
-  "crossbow": {
-    "name": "shane"
+    "crossbow": "^0.4.5",
+    "node-dir": "^0.1.6"
   }
 }
