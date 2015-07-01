@@ -1,4 +1,4 @@
-#Browsersync - Browserify, Babel (6to5) &amp; React example
+#Browsersync - Browserify, Babelify + Watchify + Sourcemaps Example
 
 ## Installation/Usage:
 
@@ -37,19 +37,19 @@ var gulp        = require('gulp');
 var gutil       = require('gulp-util');
 var source      = require('vinyl-source-stream');
 var babelify    = require('babelify');
-var reactify    = require('reactify');
 var watchify    = require('watchify');
+var exorcist    = require('exorcist');
 var browserify  = require('browserify');
 var browserSync = require('browser-sync');
 
 // Input file.
-var bundler     = watchify(browserify('./app/js/app.jsx', watchify.args));
-
-// React JSX transform
-bundler.transform(reactify);
+watchify.args.debug = true;
+var bundler = watchify(browserify('./app/js/app.js', watchify.args));
 
 // Babel transform
-bundler.transform(babelify);
+bundler.transform(babelify.configure({
+    sourceMapRelative: 'app/js'
+}));
 
 // On updates recompile
 bundler.on('update', bundle);
@@ -64,6 +64,7 @@ function bundle() {
             browserSync.notify("Browserify Error!");
             this.emit("end");
         })
+        .pipe(exorcist('app/js/dist/bundle.js.map'))
         .pipe(source('bundle.js'))
         .pipe(gulp.dest('./app/js/dist'))
         .pipe(browserSync.reload({stream: true, once: true}));

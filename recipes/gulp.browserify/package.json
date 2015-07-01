@@ -1,7 +1,7 @@
 {
   "name": "gulp.browserify",
   "version": "1.0.0",
-  "description": "Browserify, Babel (6to5) & React example",
+  "description": "Browserify, Babelify + Watchify + Sourcemaps Example",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp"
