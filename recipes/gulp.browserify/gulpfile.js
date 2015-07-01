@@ -32,7 +32,7 @@ function bundle() {
         .pipe(exorcist('app/js/dist/bundle.js.map'))
         .pipe(source('bundle.js'))
         .pipe(gulp.dest('./app/js/dist'))
-        .pipe(browserSync.reload({stream: true, once: true}));
+        .pipe(browserSync.stream({once: true}));
 }
 
 /**
