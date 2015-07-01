@@ -5,7 +5,7 @@ var babelify    = require('babelify');
 var watchify    = require('watchify');
 var exorcist    = require('exorcist');
 var browserify  = require('browserify');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 
 // Input file.
 watchify.args.debug = true;
@@ -46,7 +46,7 @@ gulp.task('bundle', function () {
  * First bundle, then serve from the ./app directory
  */
 gulp.task('default', ['bundle'], function () {
-    browserSync({
+    browserSync.init({
         server: "./app"
     });
 });
