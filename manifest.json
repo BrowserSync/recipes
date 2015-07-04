@@ -365,7 +365,7 @@
         "pkg": {
             "name": "bs-recipes-server",
             "version": "1.0.0",
-            "description": "Server + Logging Middleware Example",
+            "description": "Server + Logging + History API fallback middlewares Example",
             "main": "app.js",
             "scripts": {
                 "start": "node app.js"
@@ -373,7 +373,8 @@
             "license": "MIT",
             "dependencies": {
                 "browser-sync": "^2.1.6",
-                "connect-logger": "0.0.1"
+                "connect-logger": "0.0.1",
+                "connect-history-api-fallback": "^1.1.0"
             }
         },
         "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server.middleware",

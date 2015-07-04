@@ -1,7 +1,7 @@
 {
   "name": "bs-recipes-server",
   "version": "1.0.0",
-  "description": "Server + Logging Middleware Example",
+  "description": "Server + Logging + History API fallback middlewares Example",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
