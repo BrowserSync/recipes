@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.1.6",
-    "connect-logger": "0.0.1"
+    "connect-logger": "0.0.1",
+    "connect-history-api-fallback": "^1.1.0"
   }
 }
