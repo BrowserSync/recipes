@@ -20,6 +20,7 @@ Here's what we have currently...
 - [Server with pre-gzipped assets example](https://github.com/Browsersync/recipes/tree/master/recipes/server.gzipped.assets)
 - [Server includes example](https://github.com/Browsersync/recipes/tree/master/recipes/server.includes)
 - [Server + Logging + History API fallback middlewares Example](https://github.com/Browsersync/recipes/tree/master/recipes/server.middleware)
+- [Webpack + Monkey Hot Loader](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.monkey-hot-loader)
 - [Webpack + React Hot Loader](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-hot-loader)
 
 ... each one is a full, working example - just have a look at the `readme.md` in each one for installation
