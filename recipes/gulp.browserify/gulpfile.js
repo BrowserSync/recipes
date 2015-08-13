@@ -12,10 +12,10 @@ var mkdirp      = require('mkdirp');
 var mergeStream = require('merge-stream');
 
 /**
- * Creating multiple bundles with Watchify
+ * Creating multiple bundles with watchify
  */
 gulp.task('bundle', function (done) {
-    glob('./app/js/{app.js,worker/worker.js}', {}, function (err, files) {
+    glob('./app/js/{app.js,worker/worker.js}', function (err, files) {
         if (err) {
             done(err);
         }
