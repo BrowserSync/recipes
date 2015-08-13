@@ -44,26 +44,34 @@ var browserSync = require('browser-sync').create();
 var glob        = require('glob');
 var path        = require('path');
 var mkdirp      = require('mkdirp');
-var eventStream = require('event-stream');
+var mergeStream = require('merge-stream');
+var through     = require('through2');
+
+var mkdir = function (dir, opts) {
+    return through.obj(function (file, enc, cb) {
+        mkdirp(dir, opts, function (err, made) {
+            if (err) {
+                cb(new gutil.PluginError('gulp-mkdirp', err), file);
+                return;
+            }
+            cb(null, file);
+        });
+    });
+};
 
 /**
- * Creating multiple bundles with Watchify
+ * Creating multiple bundles with watchify
  */
 gulp.task('bundle', function (done) {
-    glob('./app/js/{app.js,worker/worker.js}', {}, function (err, files) {
+    glob('./app/js/{app.js,worker/worker.js}', function (err, files) {
         if (err) {
             done(err);
+            return;
         }
 
         var tasks = files.map(function (entry) {
             var relative = path.relative('./app/js', entry);
-
-            // A workaround for exorcist issue,
-            // where exorcist fails silently when the output dir does not exist
-            // see https://github.com/thlorenz/exorcist/issues/18
-            // and https://github.com/thlorenz/exorcist/pull/19
             var sourceMapPath = './app/js/dist/' + relative + '.map';
-            mkdirp.sync(path.dirname(sourceMapPath));
 
             // Input file.
             watchify.args.debug = true;
@@ -83,6 +91,11 @@ gulp.task('bundle', function (done) {
                         browserSync.notify('Browserify Error!');
                         this.emit('end');
                     })
+                    // The mkdir() below is a workaround for an exorcist issue,
+                    // where exorcist fails silently when the output dir does not exist
+                    // see https://github.com/thlorenz/exorcist/issues/18
+                    // and https://github.com/thlorenz/exorcist/pull/19
+                    .pipe(mkdir(path.dirname(sourceMapPath)))
                     .pipe(exorcist(sourceMapPath))
                     .pipe(source(relative))
                     .pipe(gulp.dest('./app/js/dist'))
@@ -95,7 +108,11 @@ gulp.task('bundle', function (done) {
             return bundle();
         });
 
-        eventStream.merge(tasks).on('end', done);
+        // The resume() below fixes an issue in orchestrator,
+        // where the merged stream does not trigger end event
+        // see https://github.com/grncdr/merge-stream/issues/6
+        // and https://github.com/orchestrator/orchestrator/issues/48
+        mergeStream(tasks).resume().on('end', done);
     });
 });
 
