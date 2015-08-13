@@ -9,7 +9,7 @@ var browserSync = require('browser-sync').create();
 var glob        = require('glob');
 var path        = require('path');
 var mkdirp      = require('mkdirp');
-var eventStream = require('event-stream');
+var mergeStream = require('merge-stream');
 
 /**
  * Creating multiple bundles with Watchify
@@ -60,7 +60,11 @@ gulp.task('bundle', function (done) {
             return bundle();
         });
 
-        eventStream.merge(tasks).on('end', done);
+        // The resume() below fixes an issue in orchestrator,
+        // where the merged stream does not trigger end event
+        // see https://github.com/grncdr/merge-stream/issues/6
+        // and https://github.com/orchestrator/orchestrator/issues/48
+        mergeStream(tasks).resume().on('end', done);
     });
 });
 
