@@ -22,6 +22,7 @@ Here's what we have currently...
 - [Server + Logging + History API fallback middlewares Example](https://github.com/Browsersync/recipes/tree/master/recipes/server.middleware)
 - [Webpack + Monkey Hot Loader](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.monkey-hot-loader)
 - [Webpack + React Hot Loader](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-hot-loader)
+- [Webpack + React Webpack Transform HMR](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-transform-webpack-hmr)
 
 ... each one is a full, working example - just have a look at the `readme.md` in each one for installation
 instructions.
