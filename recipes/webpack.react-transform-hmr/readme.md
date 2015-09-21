@@ -1,4 +1,4 @@
-#Browsersync - Webpack + React Webpack Transform HMR
+#Browsersync - Webpack + React Transform HMR
 
 ## Installation/Usage:
 
@@ -11,7 +11,7 @@ $ git clone https://github.com/Browsersync/recipes.git bs-recipes
 
 **Step 2**: Move into the directory containing this example
 ```bash
-$ cd bs-recipes/recipes/webpack.react-transform-webpack-hmr
+$ cd bs-recipes/recipes/webpack.react-transform-hmr
 ```
 
 **Step 3**: Install dependencies
@@ -26,7 +26,7 @@ $ npm start
 
 ### Additional Info:
 
-To see `react-transform-webpack-hmr` in action, edit `js/HelloWorld.jsx`
+To see `react-transform-hmr` in action, edit `js/HelloWorld.jsx`
 
 
 ### Preview of `app.js`:

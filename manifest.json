@@ -438,15 +438,15 @@
         "title": "Webpack React-hot-loader"
     },
     {
-        "dir": "webpack.react-transform-webpack-hmr",
+        "dir": "webpack.react-transform-hmr",
         "name": [
             "webpack",
-            "react-transform-webpack-hmr"
+            "react-transform-hmr"
         ],
         "pkg": {
-            "name": "webpack.react-transform-webpack-hmr",
+            "name": "webpack.react-transform-hmr",
             "version": "1.0.0",
-            "description": "Webpack + React Webpack Transform HMR",
+            "description": "Webpack + React Transform HMR",
             "main": "app.js",
             "author": "Sergey Slipchenko <faergeek@gmail.com>",
             "license": "MIT",
@@ -459,13 +459,13 @@
                 "babel-plugin-react-transform": "^1.0.3",
                 "browser-sync": "^2.8.0",
                 "react": "^0.13.3",
-                "react-transform-webpack-hmr": "^0.1.4",
+                "react-transform-hmr": "^1.0.0",
                 "webpack": "^1.10.5",
                 "webpack-dev-middleware": "^1.2.0",
                 "webpack-hot-middleware": "^1.1.0"
             }
         },
-        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-transform-webpack-hmr",
-        "title": "Webpack React-transform-webpack-hmr"
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-transform-hmr",
+        "title": "Webpack React-transform-hmr"
     }
 ]
