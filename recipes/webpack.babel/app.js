@@ -4,7 +4,7 @@
 var browserSync          = require('browser-sync').create();
 var webpack              = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
-var stripAnsi = require('strip-ansi');
+var stripAnsi            = require('strip-ansi');
 
 /**
  * Require ./webpack.config.js and make a bundler from it
@@ -14,6 +14,7 @@ var bundler       = webpack(webpackConfig);
 
 /**
  * Reload all devices when bundle is complete
+ * or send a fullscreen error message to the browser instead
  */
 bundler.plugin('done', function (stats) {
     if (stats.hasErrors() || stats.hasWarnings()) {
@@ -35,22 +36,11 @@ browserSync.init({
     logFileChanges: false,
     middleware: [
         webpackDevMiddleware(bundler, {
-            // IMPORTANT: dev middleware can't access config, so we should
-            // provide publicPath by ourselves
             publicPath: webpackConfig.output.publicPath,
-
-            // pretty colored output
-            stats: {
-                colors: true
-            }
-
-            // for other settings see
-            // http://webpack.github.io/docs/webpack-dev-middleware.html
+            stats: {colors: true}
         })
     ],
     plugins: ['bs-fullscreen-message'],
-    // no need to watch '*.js' here, webpack will take care of it for us,
-    // including full page reloads if HMR won't work
     files: [
         'app/css/*.css',
         'app/*.html'
