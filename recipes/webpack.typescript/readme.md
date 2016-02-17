@@ -26,7 +26,10 @@ $ npm start
 
 ### Additional Info:
 
-<span style="color: red">Crossbow WARNING:</span> Include not found: desc.md
+
+
+See `src/main.ts`
+
 
 ### Preview of `app.js`:
 ```js
