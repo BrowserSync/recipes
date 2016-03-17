@@ -11,9 +11,11 @@
     "manifest.json"
   ],
   "scripts": {
+    "clean:nm": "find ./recipes -name node_modules | xargs rm -rf",
+    "clean:other": "find . -name .sass-cache | xargs rm -rf && find . -name .idea | xargs rm -rf",
     "build": "node crossbow.js",
     "test": "npm run-script build",
-    "prepublish": "find . -name .sass-cache | xargs rm -rf && find . -name .idea | xargs rm -rf"
+    "prepublish": "npm run clean:nm && npm run clean:other"
   },
   "license": "ISC",
   "homepage": "http://www.browsersync.io/docs/recipes/",

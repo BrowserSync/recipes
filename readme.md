@@ -25,6 +25,7 @@ Here's what we have currently...
 - [Webpack + React Hot Loader](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-hot-loader)
 - [Webpack + React Transform HMR](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-transform-hmr)
 - [Webpack + TypeScript](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.typescript)
+- [Webpack, TypeScript + React](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.typescript.react)
 
 ... each one is a full, working example - just have a look at the `readme.md` in each one for installation
 instructions.
