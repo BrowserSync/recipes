@@ -8,6 +8,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.1.6"
+    "browser-sync": "^2.11.2"
   }
 }
