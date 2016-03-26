@@ -16,6 +16,7 @@ Here's what we have currently...
 - [Gulp, SASS + Slow running tasks](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.task.sequence)
 - [HTML/CSS injection example](https://github.com/Browsersync/recipes/tree/master/recipes/html.injection)
 - [Middleware + CSS example](https://github.com/Browsersync/recipes/tree/master/recipes/middleware.css.injection)
+- [Proxy example + injecting custom css file](https://github.com/Browsersync/recipes/tree/master/recipes/proxy.custom-css)
 - [Server example](https://github.com/Browsersync/recipes/tree/master/recipes/server)
 - [Server with pre-gzipped assets example](https://github.com/Browsersync/recipes/tree/master/recipes/server.gzipped.assets)
 - [Server includes example](https://github.com/Browsersync/recipes/tree/master/recipes/server.includes)
