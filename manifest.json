@@ -290,6 +290,28 @@
         "title": "Middleware Css Injection"
     },
     {
+        "dir": "proxy.custom-css",
+        "name": [
+            "proxy",
+            "custom-css"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server",
+            "version": "1.0.0",
+            "description": "Proxy example + injecting custom css file",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.11.2"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/proxy.custom-css",
+        "title": "Proxy Custom-css"
+    },
+    {
         "dir": "server",
         "name": [
             "server"
