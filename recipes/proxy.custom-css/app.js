@@ -1,15 +1,15 @@
 /**
  * Require Browsersync
  */
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 
 /**
  * Run Browsersync with server config
  * You can use an arrays for files to specify multiple files
  */
-browserSync({
+browserSync.init({
     proxy: "example.com",
-    serveStatic: [ 'app/static' ],
+    serveStatic: ["app/static"],
     files: "app/static/_custom.css",
     snippetOptions: {
         rule: {
