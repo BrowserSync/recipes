@@ -1,6 +1,6 @@
 {
   "name": "bs-recipes",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Fully working project examples showing how to use BrowserSync in various ways",
   "repository": "BrowserSync/recipes",
   "author": "Shane Osbourne",
