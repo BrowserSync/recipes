@@ -1,7 +1,6 @@
 var gulp        = require('gulp');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
-var reload      = browserSync.reload;
 
 var src = {
     scss: 'app/scss/*.scss',
@@ -12,12 +11,12 @@ var src = {
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
-    browserSync({
+    browserSync.init({
         server: "./app"
     });
 
     gulp.watch(src.scss, ['sass']);
-    gulp.watch(src.html).on('change', reload);
+    gulp.watch(src.html).on('change', browserSync.reload);
 });
 
 // Compile sass into CSS
