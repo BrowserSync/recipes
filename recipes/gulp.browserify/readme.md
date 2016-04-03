@@ -2,7 +2,7 @@
 
 ## Installation/Usage:
 
-To try this example, follow these 4 simple steps. 
+To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
@@ -41,40 +41,79 @@ var watchify    = require('watchify');
 var exorcist    = require('exorcist');
 var browserify  = require('browserify');
 var browserSync = require('browser-sync').create();
+var glob        = require('glob');
+var path        = require('path');
+var mkdirp      = require('mkdirp');
+var mergeStream = require('merge-stream');
+var through     = require('through2');
 
-// Input file.
-watchify.args.debug = true;
-var bundler = watchify(browserify('./app/js/app.js', watchify.args));
-
-// Babel transform
-bundler.transform(babelify.configure({
-    sourceMapRelative: 'app/js'
-}));
-
-// On updates recompile
-bundler.on('update', bundle);
-
-function bundle() {
-
-    gutil.log('Compiling JS...');
-
-    return bundler.bundle()
-        .on('error', function (err) {
-            gutil.log(err.message);
-            browserSync.notify("Browserify Error!");
-            this.emit("end");
-        })
-        .pipe(exorcist('app/js/dist/bundle.js.map'))
-        .pipe(source('bundle.js'))
-        .pipe(gulp.dest('./app/js/dist'))
-        .pipe(browserSync.stream({once: true}));
-}
+var mkdir = function (dir, opts) {
+    return through.obj(function (file, enc, cb) {
+        mkdirp(dir, opts, function (err, made) {
+            if (err) {
+                cb(new gutil.PluginError('gulp-mkdirp', err), file);
+                return;
+            }
+            cb(null, file);
+        });
+    });
+};
 
 /**
- * Gulp task alias
+ * Creating multiple bundles with watchify
  */
-gulp.task('bundle', function () {
-    return bundle();
+gulp.task('bundle', function (done) {
+    glob('./app/js/{app.js,worker/worker.js}', function (err, files) {
+        if (err) {
+            done(err);
+            return;
+        }
+
+        var tasks = files.map(function (entry) {
+            var relative = path.relative('./app/js', entry);
+            var sourceMapPath = './app/js/dist/' + relative + '.map';
+
+            // Input file.
+            watchify.args.debug = true;
+            var bundler = watchify(browserify(entry, watchify.args));
+
+            // Babel transform
+            bundler.transform(babelify.configure({
+                sourceMapRelative: 'app/js'
+            }));
+
+            var bundle = function () {
+                gutil.log('Compiling ' + entry + '...');
+
+                return bundler.bundle()
+                    .on('error', function (err) {
+                        gutil.log(err.message);
+                        browserSync.notify('Browserify Error!');
+                        this.emit('end');
+                    })
+                    // The mkdir() below is a workaround for an exorcist issue,
+                    // where exorcist fails silently when the output dir does not exist
+                    // see https://github.com/thlorenz/exorcist/issues/18
+                    // and https://github.com/thlorenz/exorcist/pull/19
+                    .pipe(mkdir(path.dirname(sourceMapPath)))
+                    .pipe(exorcist(sourceMapPath))
+                    .pipe(source(relative))
+                    .pipe(gulp.dest('./app/js/dist'))
+                    .pipe(browserSync.stream({once: true}));
+            }
+
+            // On updates recompile
+            bundler.on('update', bundle);
+
+            return bundle();
+        });
+
+        // The resume() below fixes an issue in orchestrator,
+        // where the merged stream does not trigger end event
+        // see https://github.com/grncdr/merge-stream/issues/6
+        // and https://github.com/orchestrator/orchestrator/issues/48
+        mergeStream(tasks).resume().on('end', done);
+    });
 });
 
 /**
@@ -82,8 +121,8 @@ gulp.task('bundle', function () {
  */
 gulp.task('default', ['bundle'], function () {
     browserSync.init({
-        server: "./app"
+        server: './app'
     });
 });
-```
 
+```

@@ -8,12 +8,16 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "exorcist": "^0.4.0",
     "babelify": "^6.1.2",
     "browser-sync": "^2.2.1",
     "browserify": "^8.1.3",
+    "exorcist": "^0.4.0",
+    "glob": "^5.0.14",
     "gulp": "^3.8.11",
     "gulp-util": "^3.0.3",
+    "merge-stream": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "through2": "^2.0.0",
     "vinyl-source-stream": "^1.0.0",
     "watchify": "^2.3.0"
   }
