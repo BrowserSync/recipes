@@ -47,7 +47,7 @@ gulp.task('templates', function() {
         .pipe(jade({
             locals: YOUR_LOCALS
         }))
-        .pipe(gulp.dest('./dist/'))
+        .pipe(gulp.dest('./dist/'));
 });
 
 /**
