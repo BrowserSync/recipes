@@ -42,8 +42,10 @@ var exorcist    = require('exorcist');
 var browserify  = require('browserify');
 var browserSync = require('browser-sync').create();
 
-// Input file.
+// Watchify args contains necessary cache options to achieve fast incremental bundles.
+// See watchify readme for details. Adding debug true for sourcemap generation.
 watchify.args.debug = true;
+// Input file.
 var bundler = watchify(browserify('./app/js/app.js', watchify.args));
 
 // Babel transform
