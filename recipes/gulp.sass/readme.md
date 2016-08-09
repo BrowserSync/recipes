@@ -35,7 +35,7 @@ as the support for calling `reload` directly following html changes.
 ### Preview of `gulpfile.js`:
 ```js
 var gulp        = require('gulp');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var reload      = browserSync.reload;
 
@@ -48,7 +48,7 @@ var src = {
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
-    browserSync({
+    browserSync.init({
         server: "./app"
     });
 
