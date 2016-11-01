@@ -1,8 +1,8 @@
-#Browsersync - Gulp, SASS + Jade Templates
+#Browsersync - Gulp, SASS + Pug Templates
 
 ## Installation/Usage:
 
-To try this example, follow these 4 simple steps. 
+To try this example, follow these 4 simple steps.
 
 **Step 1**: Clone this entire repo
 ```bash
@@ -11,7 +11,7 @@ $ git clone https://github.com/Browsersync/recipes.git bs-recipes
 
 **Step 2**: Move into the directory containing this example
 ```bash
-$ cd bs-recipes/recipes/gulp.jade
+$ cd bs-recipes/recipes/gulp.pug
 ```
 
 **Step 3**: Install dependencies
@@ -26,25 +26,35 @@ $ npm start
 
 ### Additional Info:
 
+This is an upgraded version of [gulp.jade recipe](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.jade) from [BrowserSync](https://github.com/browsersync/browser-sync) .
 
+Some useful links:
+
+  - template engine : [pug documentation](https://pugjs.org/api/reference.html)
+    (was: Jade)
+    - and its integration with gulp: [gulp-pug](https://www.npmjs.com/package/gulp-pug)
+  - css preprocessing : [node-sass](https://www.npmjs.com/package/node-sass)
+    - and its integration with
+      gulp: [gulp-sass](https://www.npmjs.com/package/gulp-pug)
+  - and of course [gulp](https://github.com/gulpjs/gulp/blob/master/docs/README.md)
 
 ### Preview of `gulpfile.js`:
 ```js
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
-var jade        = require('gulp-jade');
+var pug         = require('gulp-pug');
 var reload      = browserSync.reload;
 
 /**
- * Compile jade files into HTML
+ * Compile pug files into HTML
  */
 gulp.task('templates', function() {
 
     var YOUR_LOCALS = {};
 
-    return gulp.src('./app/*.jade')
-        .pipe(jade({
+    return gulp.src('./app/*.pug')
+        .pipe(pug({
             locals: YOUR_LOCALS
         }))
         .pipe(gulp.dest('./dist/'));
@@ -52,9 +62,9 @@ gulp.task('templates', function() {
 
 /**
  * Important!!
- * Separate task for the reaction to `.jade` files
+ * Separate task for the reaction to `.pug` files
  */
-gulp.task('jade-watch', ['templates'], reload);
+gulp.task('pug-watch', ['templates'], reload);
 
 /**
  * Sass task for live injecting into all browsers
@@ -67,15 +77,14 @@ gulp.task('sass', function () {
 });
 
 /**
- * Serve and watch the scss/jade files for changes
+ * Serve and watch the scss/pug files for changes
  */
 gulp.task('default', ['sass', 'templates'], function () {
 
     browserSync({server: './dist'});
 
     gulp.watch('./app/scss/*.scss', ['sass']);
-    gulp.watch('./app/*.jade',      ['jade-watch']);
+    gulp.watch('./app/*.pug',      ['pug-watch']);
 });
 
 ```
-
