@@ -9,7 +9,9 @@ var reload      = browserSync.reload;
  */
 gulp.task('templates', function() {
 
-    var YOUR_LOCALS = {};
+  var YOUR_LOCALS = {
+    "message": "This app is powered by gulp.pug recipe for BrowserSync"
+  };
 
     return gulp.src('./app/*.pug')
         .pipe(pug({
@@ -40,6 +42,7 @@ gulp.task('sass', function () {
 gulp.task('default', ['sass', 'templates'], function () {
 
     browserSync({server: './dist'});
+
 
     gulp.watch('./app/scss/*.scss', ['sass']);
     gulp.watch('./app/*.pug',      ['pug-watch']);
