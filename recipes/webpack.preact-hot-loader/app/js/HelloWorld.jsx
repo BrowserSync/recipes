@@ -3,7 +3,7 @@ import {h, Component} from 'preact';
 export default class HelloWorld extends Component {
   render() {
     // Play with it...
-    const name = 'Shane';
+    const name = 'World';
 
     return (
       <h2 className="hello-world">
