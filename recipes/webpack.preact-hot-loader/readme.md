@@ -1,3 +1,36 @@
+#Browsersync - Webpack + Preact Hot Loader
+
+## Installation/Usage:
+
+To try this example, follow these 4 simple steps. 
+
+**Step 1**: Clone this entire repo
+```bash
+$ git clone https://github.com/Browsersync/recipes.git bs-recipes
+```
+
+**Step 2**: Move into the directory containing this example
+```bash
+$ cd bs-recipes/recipes/webpack.preact-hot-loader
+```
+
+**Step 3**: Install dependencies
+```bash
+$ npm install
+```
+
+**Step 4**: Run the example
+```bash
+$ npm start
+```
+
+### Additional Info:
+
+To see `preact-hot-loader` in action, edit `js/HelloWorld.jsx`
+
+
+### Preview of `app.js`:
+```js
 /**
  * Require Browsersync along with webpack and middleware for it
  */
@@ -40,3 +73,6 @@ browserSync.init({
         'app/*.html'
     ]
 });
+
+```
+
