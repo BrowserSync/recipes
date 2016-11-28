@@ -2,8 +2,8 @@
 //////
 //////
 @mixin frost () {
-    background: #000428;
-    background: linear-gradient(to left, #000428 , #003428);
+    background: #000000;
+    background: linear-gradient(to left, #FFFFFF , #000FFF);
 }
 body {
     @include frost;
