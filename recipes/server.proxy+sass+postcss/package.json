@@ -1,0 +1,18 @@
+{
+  "name": "server.proxy+sass+postcss",
+  "description": "Combine node-sass and postcss with BS.",
+  "main": "server.js",
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "browser-sync": "^2.18.2",
+    "cssnano": "^3.8.1",
+    "es6-promise": "^4.0.5",
+    "node-sass": "^3.13.0",
+    "postcss": "^5.2.6",
+    "postcss-unprefix": "^1.0.0",
+    "terminal-kit": "^0.25.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
