@@ -21,6 +21,7 @@ Here's what we have currently...
 - [Server with pre-gzipped assets example](https://github.com/Browsersync/recipes/tree/master/recipes/server.gzipped.assets)
 - [Server includes example](https://github.com/Browsersync/recipes/tree/master/recipes/server.includes)
 - [Server + Logging + History API fallback middlewares Example](https://github.com/Browsersync/recipes/tree/master/recipes/server.middleware)
+- [Combine node-sass and postcss with BS.](https://github.com/Browsersync/recipes/tree/master/recipes/server.proxy+sass+postcss)
 - [Webpack + Babel](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.babel)
 - [Webpack + Monkey Hot Loader](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.monkey-hot-loader)
 - [Webpack + Preact Hot Loader](https://github.com/Browsersync/recipes/tree/master/recipes/webpack.preact-hot-loader)
