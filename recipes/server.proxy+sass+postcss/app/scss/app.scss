@@ -1,0 +1,10 @@
+@charset 'utf-8';
+//////
+//////
+@mixin frost () {
+    background: #000428;
+    background: linear-gradient(to left, #000428 , #003428);
+}
+body {
+    @include frost;
+}

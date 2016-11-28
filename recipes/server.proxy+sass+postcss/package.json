@@ -1,5 +1,5 @@
 {
-  "name": "server.proxy+sass+postcss",
+  "name": "server-proxy-sass-postcss",
   "description": "Combine node-sass and postcss with BS.",
   "main": "server.js",
   "devDependencies": {
