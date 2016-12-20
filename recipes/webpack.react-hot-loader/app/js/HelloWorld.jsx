@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class HelloWorld extends React.Component {
+export default class HelloWorld extends Component {
   render() {
     // Play with it...
     const name = 'World';
