@@ -110,15 +110,15 @@
         "title": "Gulp Browserify"
     },
     {
-        "dir": "gulp.jade",
+        "dir": "gulp.pug",
         "name": [
             "gulp",
-            "jade"
+            "pug"
         ],
         "pkg": {
-            "name": "gulp.jade",
+            "name": "gulp.pug",
             "version": "1.0.0",
-            "description": "Gulp, SASS + Jade Templates",
+            "description": "Gulp, SASS + Pug Templates",
             "main": "gulpfile.js",
             "scripts": {
                 "start": "gulp"
@@ -126,14 +126,14 @@
             "author": "",
             "license": "ISC",
             "devDependencies": {
-                "browser-sync": "^2.2.0",
-                "gulp": "^3.8.11",
-                "gulp-jade": "^1.0.0",
-                "gulp-sass": "^1.3.3"
+                "browser-sync": "^2.17.5",
+                "gulp": "^3.9.1",
+                "gulp-pug": "^3.1.0",
+                "gulp-sass": "^2.3.2"
             }
         },
-        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.jade",
-        "title": "Gulp Jade"
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.pug",
+        "title": "Gulp Pug"
     },
     {
         "dir": "gulp.ruby.sass",

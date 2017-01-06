@@ -9,7 +9,7 @@ Here's what we have currently...
 - [Grunt &amp; SASS](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass)
 - [Grunt, SASS &amp; Autoprefixer](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass.autoprefixer)
 - [Browserify, Babelify + Watchify + Sourcemaps Example](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.browserify)
-- [Gulp, SASS + Jade Templates](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.jade)
+- [Gulp, SASS + Pug Templates](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.pug)
 - [Gulp &amp; Ruby SASS](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.ruby.sass)
 - [Gulp &amp; SASS](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.sass)
 - [Gulp &amp; Swig Templates](https://github.com/Browsersync/recipes/tree/master/recipes/gulp.swig)

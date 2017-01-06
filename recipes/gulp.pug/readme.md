@@ -2,7 +2,7 @@
 
 ## Installation/Usage:
 
-To try this example, follow these 4 simple steps.
+To try this example, follow these 4 simple steps. 
 
 **Step 1**: Clone this entire repo
 ```bash
@@ -51,7 +51,9 @@ var reload      = browserSync.reload;
  */
 gulp.task('templates', function() {
 
-    var YOUR_LOCALS = {};
+    var YOUR_LOCALS = {
+        "message": "This app is powered by gulp.pug recipe for BrowserSync"
+    };
 
     return gulp.src('./app/*.pug')
         .pipe(pug({
@@ -71,7 +73,7 @@ gulp.task('pug-watch', ['templates'], reload);
  */
 gulp.task('sass', function () {
     return gulp.src('./app/scss/*.scss')
-        .pipe(sass())
+        .pipe(sass()).on('error', sass.logError)
         .pipe(gulp.dest('./dist/css'))
         .pipe(reload({stream: true}));
 });
@@ -83,8 +85,10 @@ gulp.task('default', ['sass', 'templates'], function () {
 
     browserSync({server: './dist'});
 
+
     gulp.watch('./app/scss/*.scss', ['sass']);
-    gulp.watch('./app/*.pug',      ['pug-watch']);
+    gulp.watch('./app/*.pug',       ['pug-watch']);
 });
 
 ```
+
