@@ -13,11 +13,11 @@ browserSync.init({
     rewriteRules: [
         {
             match: /@include\("(.+?)"\)/g,
-            fn: function (match, filename) {
+            fn: function(match, filename) {
                 if (fs.existsSync(filename)) {
                     return fs.readFileSync(filename);
                 } else {
-                    return '<span style="color: red">'+filename+' could not be found</span>';
+                    return '<span style="color: red">' + filename + ' could not be found</span>';
                 }
             }
         }

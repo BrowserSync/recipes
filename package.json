@@ -21,6 +21,8 @@
   "homepage": "http://www.browsersync.io/docs/recipes/",
   "devDependencies": {
     "crossbow": "^0.4.5",
-    "node-dir": "^0.1.6"
-  }
+    "node-dir": "^0.1.6",
+    "prettier": "^0.22.0"
+  },
+  "dependencies": {}
 }

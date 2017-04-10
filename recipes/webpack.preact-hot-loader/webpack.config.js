@@ -2,14 +2,12 @@
 // webpack and webpack-hot-middleware documentation
 var webpack = require('webpack');
 var path = require('path');
-var CompressionPlugin = require("compression-webpack-plugin");
+var CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
     context: path.join(__dirname, 'app', 'js'),
-    entry: [
-        './main'
-    ],
+    entry: ['./main'],
     output: {
         path: path.join(__dirname, 'app', 'dist'),
         filename: 'bundle.js'
@@ -18,8 +16,8 @@ module.exports = {
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.NoErrorsPlugin(),
         new CompressionPlugin({
-            asset: "[path].gz[query]",
-            algorithm: "gzip",
+            asset: '[path].gz[query]',
+            algorithm: 'gzip',
             test: /\.js$/,
             threshold: 10240,
             minRatio: 0.8

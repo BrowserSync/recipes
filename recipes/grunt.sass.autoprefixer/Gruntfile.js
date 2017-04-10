@@ -1,8 +1,8 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     grunt.initConfig({
         dirs: {
-            css:  "app/css",
-            scss: "app/scss"
+            css: 'app/css',
+            scss: 'app/scss'
         },
         watch: {
             options: {
@@ -36,14 +36,14 @@ module.exports = function (grunt) {
         browserSync: {
             dev: {
                 options: {
-                    server: "./app",
+                    server: './app',
                     background: true
                 }
             }
         },
         bsReload: {
             css: {
-                reload: "main.css"
+                reload: 'main.css'
             },
             all: {
                 reload: true

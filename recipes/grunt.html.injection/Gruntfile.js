@@ -1,5 +1,5 @@
 // This shows a full config file!
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             files: 'app/scss/**/*.scss',
@@ -19,9 +19,9 @@ module.exports = function (grunt) {
                     server: './app',
                     plugins: [
                         {
-                            module: "bs-html-injector",
+                            module: 'bs-html-injector',
                             options: {
-                                files: "./app/*.html"
+                                files: './app/*.html'
                             }
                         }
                     ]
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
             }
         },
         bsReload: {
-            css: "main.css"
+            css: 'main.css'
         }
     });
 

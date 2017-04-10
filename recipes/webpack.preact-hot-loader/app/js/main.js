@@ -1,9 +1,10 @@
-import {h, render} from 'preact';
+import { h, render } from 'preact';
 
 if (module.hot) {
-    module.hot.accept('./HelloWorld.jsx', () => requestAnimationFrame(() => {
-        init();
-    }));
+    module.hot.accept('./HelloWorld.jsx', () =>
+        requestAnimationFrame(() => {
+            init();
+        }));
 }
 
 let root;

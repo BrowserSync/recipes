@@ -1,8 +1,8 @@
 /**
  * Require Browsersync along with webpack and middleware for it
  */
-var browserSync          = require('browser-sync').create();
-var webpack              = require('webpack');
+var browserSync = require('browser-sync').create();
+var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
 
@@ -24,7 +24,7 @@ browserSync.init({
             publicPath: webpackConfig.output.publicPath,
 
             // pretty colored output
-            stats: {colors: true}
+            stats: { colors: true }
 
             // for other settings see
             // http://webpack.github.io/docs/webpack-dev-middleware.html
@@ -35,8 +35,5 @@ browserSync.init({
     ],
     // no need to watch '*.js' here, webpack will take care of it for us,
     // including full page reloads if HMR won't work
-    files: [
-        'app/css/*.css',
-        'app/*.html'
-    ]
+    files: ['app/css/*.css', 'app/*.html']
 });

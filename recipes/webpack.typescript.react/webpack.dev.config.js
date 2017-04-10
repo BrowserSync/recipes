@@ -1,4 +1,4 @@
-const common  = require('./webpack.common.config');
+const common = require('./webpack.common.config');
 
 common.debug = true;
 common.devtool = '#eval-source-map';

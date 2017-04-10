@@ -1,5 +1,5 @@
 // This shows a full config file!
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             files: 'app/scss/**/*.scss',
@@ -15,10 +15,7 @@ module.exports = function (grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : [
-                        'app/css/*.css',
-                        'app/*.html'
-                    ]
+                    src: ['app/css/*.css', 'app/*.html']
                 },
                 options: {
                     watchTask: true,

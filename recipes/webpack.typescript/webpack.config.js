@@ -4,31 +4,24 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  debug: true,
-  devtool: '#eval-source-map',
+    debug: true,
+    devtool: '#eval-source-map',
 
-  entry: [
-    './src/main.ts'
-  ],
+    entry: ['./src/main.ts'],
 
-  output: {
-    path: path.join(__dirname, 'app'),
-    publicPath: '/',
-    filename: 'dist/bundle.js'
-  },
+    output: {
+        path: path.join(__dirname, 'app'),
+        publicPath: '/',
+        filename: 'dist/bundle.js'
+    },
 
-  plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.NoErrorsPlugin()
-  ],
-  
-  resolve: {
-    extensions: ['', '.ts', '.js']
-  },
+    plugins: [new webpack.optimize.OccurenceOrderPlugin(), new webpack.NoErrorsPlugin()],
 
-  module: {
-    loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' },
-    ],
-  }
+    resolve: {
+        extensions: ['', '.ts', '.js']
+    },
+
+    module: {
+        loaders: [{ test: /\.ts$/, loader: 'ts-loader' }]
+    }
 };
