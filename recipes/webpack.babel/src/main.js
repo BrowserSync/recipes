@@ -4,7 +4,6 @@ window.onload = function() {
     let number = document.getElementById('number');
     let incBtn = document.getElementById('inc');
     let decBtn = document.getElementById('dec');
-
     incBtn.addEventListener(
         'click',
         function() {

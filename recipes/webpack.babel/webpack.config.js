@@ -4,7 +4,6 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-    debug: true,
     devtool: '#eval-source-map',
 
     entry: ['./src/main'],
@@ -14,19 +13,19 @@ module.exports = {
         publicPath: '/',
         filename: 'dist/bundle.js'
     },
-
-    plugins: [new webpack.optimize.OccurenceOrderPlugin(), new webpack.NoErrorsPlugin()],
-
+    plugins: [
+      new webpack.LoaderOptionsPlugin({
+        debug: true
+      }),
+      new webpack.NoEmitOnErrorsPlugin()
+    ],
     module: {
-        loaders: [
+        rules: [
             {
-                loader: 'babel-loader',
-
                 // Only run `.js` and `.jsx` files through Babel
                 test: /\.jsx?$/,
-
+                loader: 'babel-loader',
                 exclude: /node_modules/,
-
                 // Options to configure babel with
                 query: {
                     plugins: ['transform-runtime'],
@@ -35,4 +34,5 @@ module.exports = {
             }
         ]
     }
+
 };
