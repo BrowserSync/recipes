@@ -42,6 +42,7 @@ browserSync.init({
         webpackDevMiddleware(bundler, {
             publicPath: webpackConfig.output.publicPath,
             stats: { colors: true }
+            ,quiet: true
         })
     ],
     plugins: ['bs-fullscreen-message'],
