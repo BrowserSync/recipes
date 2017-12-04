@@ -26,7 +26,9 @@ gulp.task('templates', function() {
  * Important!!
  * Separate task for the reaction to `.pug` files
  */
-gulp.task('pug-watch', ['templates'], reload);
+gulp.task('pug-watch', ['templates'], function() {
+    return reload();
+});
 
 /**
  * Sass task for live injecting into all browsers
