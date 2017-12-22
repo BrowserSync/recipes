@@ -35,7 +35,7 @@ Some useful links:
     - and its integration with gulp: [gulp-pug](https://www.npmjs.com/package/gulp-pug)
   - css preprocessing : [node-sass](https://www.npmjs.com/package/node-sass)
     - and its integration with
-      gulp: [gulp-sass](https://www.npmjs.com/package/gulp-pug)
+      gulp: [gulp-sass](https://www.npmjs.com/package/gulp-sass)
   - and of course [gulp](https://github.com/gulpjs/gulp/blob/master/docs/README.md)
 
 ### Preview of `gulpfile.js`:
