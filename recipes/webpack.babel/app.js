@@ -10,8 +10,13 @@ var stripAnsi = require('strip-ansi');
  * Require ./webpack.config.js and make a bundler from it
  */
 var webpackConfig = require('./webpack.config');
-var bundler = webpack(webpackConfig);
+//console.log(webpackConfig);
 
+var bundler = webpack(webpackConfig,(err, stats) => {
+  if (err || stats.hasErrors()) {
+    console.warn(err);
+  }
+});
 /**
  * Reload all devices when bundle is complete
  * or send a fullscreen error message to the browser instead
@@ -26,18 +31,18 @@ bundler.plugin('done', function(stats) {
     }
     browserSync.reload();
 });
-
 /**
  * Run Browsersync and use middleware for Hot Module Replacement
  */
 browserSync.init({
     server: 'app',
-    open: false,
+    open: true,
     logFileChanges: false,
     middleware: [
         webpackDevMiddleware(bundler, {
             publicPath: webpackConfig.output.publicPath,
             stats: { colors: true }
+            ,quiet: true
         })
     ],
     plugins: ['bs-fullscreen-message'],

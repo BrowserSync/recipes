@@ -5,3 +5,4 @@ npm-debug.log
 *.css.map
 yarn.lock
 !/yarn.lock
+/recipes/webpack.babel/app/dist

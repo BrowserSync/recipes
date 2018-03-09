@@ -1,0 +1,25 @@
+body.loading *{
+  display:none;
+}
+body.loading .loadingTip{
+  border-radius:5px;
+  display:block;
+  background-color:#a4a4a4;
+  color:#fff;
+  font-size:20px;
+  width:100px;
+  height:100px;
+  line-height:100px;
+  text-align:center;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: fixed;
+}
+body.loading .loadingTip p{
+  color:#fff;display:block;
+}
+body.loaded .loadingTip{
+  display:none;
+}
