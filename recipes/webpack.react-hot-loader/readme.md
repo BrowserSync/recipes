@@ -62,7 +62,7 @@ browserSync({
           stats: { colors: true }
 
           // for other settings see
-          // http://webpack.github.io/docs/webpack-dev-middleware.html
+          // https://github.com/webpack/webpack-dev-middleware
         }),
 
         // bundler should be the same as above
